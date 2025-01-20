@@ -1,0 +1,15 @@
+# Menggunakan linting standar dari package flutter_lints
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  exclude:
+    - build/** # Mengecualikan folder build dari analisis
+    - assets/** # Jika Anda tidak ingin menganalisis file di dalam folder assets
+
+linter:
+  rules:
+    always_declare_return_types: true # Wajib mendeklarasikan tipe pengembalian fungsi
+    prefer_const_constructors: true # Menggunakan konstanta jika memungkinkan
+    avoid_print: true # Menghindari penggunaan print, gunakan logging
+    prefer_final_fields: true # Gunakan final untuk field jika tidak diubah
+    sort_child_properties_last: true # Atur properti child di akhir
